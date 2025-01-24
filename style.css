@@ -1,0 +1,195 @@
+@import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, Helvetica, sans-serif;
+  background-color: #754fa7f5;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  height: 70vh;
+  margin-top: 120px;
+}
+
+.form-container {
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 30px;
+  box-shadow: 0 2px 2px 2px;
+  overflow: hidden;
+  width: 400px;
+  max-width: 100%;
+}
+
+.header {
+  background: #f7f7f7;
+  border-bottom: 1px solid #f0f0f0;
+  padding: 20px 40px;
+}
+
+.header h1 {
+  margin: 0;
+}
+
+h1 {
+  font: size 1.8em;
+  color: #2d1f55;
+}
+
+.form {
+  padding: 30px 40px;
+}
+
+.form-control {
+  margin-bottom: 10px;
+  padding-bottom: 20px;
+  position: relative;
+}
+
+.form-control label {
+  display: inline-block;
+  margin-bottom: 5px;
+  font-size: 0.9rem;
+  font-weight: bold;
+}
+
+.form-control input {
+  width: 100%;
+  padding: 10px;
+  border: 2px solid #f0f0f0;
+  border-radius: 2px;
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+}
+
+.form-control.success input {
+  border-color: #2ecc71;
+}
+
+.form-control.form-control.error input {
+  border-color: #e74c3c;
+}
+
+.form-control i {
+  visibility: hidden;
+  position: absolute;
+  top: 36px;
+  right: 10px;
+}
+
+
+.form-control.success i.fa-check-circle {
+  visibility: visible;
+  color: #2ecc71;
+  top: 36px;
+  right: 30px;
+}
+
+.form-control.error i.fa-exclamation-circle {
+  visibility: visible;
+  color: #e74c3c;
+  top: 36px;
+  right: 30px;
+}
+
+.form-control small {
+  visibility: hidden;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+
+.form-control.error small {
+  visibility: visible;
+  color: #e74c3c;
+}
+
+.form button {
+  width: 100%;
+  padding: 10px;
+  background-color: #2d1f55;
+  color: #fff;
+  border: 2px solid #a07ee9ef;
+  border-radius: 5px;
+  display: block;
+  font-family: inherit;
+  font-size: 1rem;
+  margin-top: 20px;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.submit-btn:hover {
+  background-color: #754fa7f5;
+}
+
+@media(max-width:480px) {
+  .form-container {
+    padding: 15px 20px;
+  }
+
+  h1 {
+    font-size: 1.5rem;
+  }
+}
+
+@media (min-width: 360px) and (max-width: 767px) {
+  body {
+    height: 90vh;
+    margin-top: 30px;
+
+  }
+}
+
+/* Extra small devices (phones, less than 576px) */
+/* @media (max-width: 667px) {
+  body {
+      height: 80vh;
+      margin-top: 80px;
+    }
+} */
+
+@media (min-width: 414px) and (max-width: 576px) {
+  body {
+    height: 70vh;
+    margin-top: 100px;
+  }
+}
+
+
+
+/* Small devices (tablets, 576px and up) */
+@media (min-width: 576px) and (max-width: 767.98px) {
+  body {
+    height: 85vh;
+    margin-top: 20px;
+  }
+}
+
+/* Medium devices (desktops, 768px and up) */
+@media (min-width: 768px) and (max-width: 991.98px) {
+  body {
+    height: 85vh;
+    margin-top: 50px;
+  }
+}
+
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) and (max-width: 1199.98px) {
+  body {
+    height: 100vh;
+    margin-top: 100px;
+  }
+}
+
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  body {
+    height: 80vh;
+    margin-top: 60px;
+  }
+}

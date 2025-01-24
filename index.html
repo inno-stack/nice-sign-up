@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Sign Up</title>
+  <link rel="stylesheet" href="style.css" />
+   <link
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <div class="form-container">
+      <div class="header">
+        <h1>Sign Up Here</h1>
+      </div>
+     <!-- Username -->
+      <form action="" class="form" id="form">
+        <div class="form-control">
+          <label form="username">Username</label>
+          <input type="text" placeholder="Your username" id="username" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+        </div>
+        <!-- Email -->
+        <div class="form-control">
+          <label form="email">Email</label>
+          <input type="email" placeholder="Your Email" id="email" />
+          <i class="fas fa-check-circle"></i>
+          <i class="fas fa-exclamation-circle"></i>
+          <small>Error message</small>
+          <!-- password -->
+        </div>
+        <div class="form-control">
+          <label form="password">Password</label>
+          <input type="password" placeholder="password" id="password" />
+          <i class="fa-check-circle"></i>
+          <i class="fa-exclamation-circle"></i>
+          <i class="fa-eye-slash" id="show" onclick="togglePassword()"></i>
+          <i class="fa-eye-slash" id="hide" onclick="togglePassword()"></i>
+          <small>Error message</small>
+        </div>
+        <!-- comfarim Password -->
+        <div class="form-control">
+          <label form="password">Confirm Password</label>
+          <input type="password" placeholder="Confirm password" id="password2" />
+          <i class="fa-check-circle"></i>
+          <i class="fa-exclamation-circle"></i>
+          <i class="fa-eye-slash" id="show2" onclick="toggleConfirm()"></i> 
+          <i class="fa-eye-slash" id="hide2" onclick="toggleConfirm()"></i> 
+          <small>Error message</small>
+        </div>
+        
+        <!-- Submit html button here -->
+        <button type="submit" class="submit-btn">Submit</button>
+      </div>
+    </form>
+     <script src="/script.js" defer></script>
+  </body>
+</html>
