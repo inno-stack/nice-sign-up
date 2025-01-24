@@ -12,8 +12,8 @@ body {
   display: flex;
   justify-content: center;
   align-content: center;
-  height: 95vh;
-  margin-top: 50px;
+  height: 100vh;
+  margin: 0;
 }
 
 .form-container {
@@ -184,15 +184,15 @@ h1 {
 /* Large devices (desktops, 992px and up) */
 @media (min-width: 992px) and (max-width: 1199.98px) {
   body {
-    height: 100vh;
-    margin-top: 100px;
+    height: 95vh;
+    margin-top: 10px;
   }
 }
 
 /* Extra large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) {
   body {
-    height: 80vh;
-    margin-top: 60px;
+    height: 95vh;
+    margin-top: 10px;
   }
 }
